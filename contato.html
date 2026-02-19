@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Amigo | Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🐾 Lar Amigo</div>
+        <div id="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="adote.html">Adote</a>
+            <a href="doar.html">Doar</a>
+            <a href="voluntario.html">Seja Voluntário</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Fale Conosco</h1>
+        <p>Tire suas dúvidas ou agende uma visita ao nosso abrigo.</p>
+    </section>
+
+    <div class="container">
+        <section>
+    <h2 style="text-align:center; color:var(--principal); margin-bottom:20px;">Onde Estamos</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122841.52843431692!2d-48.01255011746777!3d-15.787705406323485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18c34f2761%3A0x94ef3425f180766d!2zQnJhc8OtbGlhLCBERg!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+        <div class="grid">
+            <div class="card" style="text-align: left; align-items: flex-start; padding: 40px;">
+                <h2 style="color:var(--principal); margin-bottom: 20px;">Nossas Redes</h2>
+                <p><strong>📍 Localização:</strong> Brasília, DF</p>
+                <p><strong>📱 WhatsApp:</strong> (61) 98888-7777</p>
+                <p><strong>📧 Email:</strong> contato@laramigo.com.br</p>
+                <p><strong>📸 Instagram:</strong> @laramigo_oficial</p>
+            </div>
+
+            <form style="background: var(--branco); padding: 40px; border-radius: 40px; box-shadow: var(--sombra);">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea rows="5" placeholder="Sua Mensagem..." required></textarea>
+                <button type="submit" class="btn" style="width:100%;">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Lar Amigo - Brasília, DF</footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

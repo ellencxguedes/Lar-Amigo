@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Amigo | Ser Voluntário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🐾 Lar Amigo</div>
+        <div id="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="adote.html">Adote</a>
+            <a href="doar.html">Doar</a>
+            <a href="voluntario.html" class="active">Seja Voluntário</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Faça parte da nossa equipe</h1>
+        <p>Sua ajuda em Brasília pode salvar muitas vidas.</p>
+    </section>
+
+    <div class="container">
+        <form style="max-width: 800px; margin: 0 auto; background: var(--branco); padding: 40px; border-radius: 40px; box-shadow: var(--sombra);">
+            <h2 style="color:var(--principal); margin-bottom:20px; text-align:center;">Cadastro de Voluntariado</h2>
+            
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="tel" placeholder="WhatsApp (61) 9XXXX-XXXX" required>
+            
+            <select required>
+                <option value="" disabled selected>Área de Interesse</option>
+                <option>Transporte Solidário</option>
+                <option>Voluntário Interno (Limpeza e Banho)</option>
+                <option>Lar Temporário</option>
+                <option>Eventos</option>
+            </select>
+
+            <textarea rows="4" placeholder="Conte um pouco sobre sua experiência com animais..." required></textarea>
+            
+            <button type="submit" class="btn" style="width:100%;">Enviar Candidatura</button>
+        </form>
+    </div>
+
+    <footer>&copy; 2026 Lar Amigo - Brasília, DF</footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

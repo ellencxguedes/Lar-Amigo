@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Amigo | Formulário de Adoção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🐾 Lar Amigo</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="adote.html">Adote</a>
+            <a href="doar.html">Doar</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Formulário de Adoção</h1>
+        <p>Dê o primeiro passo para mudar uma vida para sempre.</p>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom:10px; color:var(--principal)">Questionário de Interesse</h2>
+        <p style="text-align:center; margin-bottom:40px;">Brasília, Distrito Federal</p>
+        
+        <form>
+            <h3 style="color:var(--principal); margin-bottom:20px; border-bottom: 2px solid var(--fundo-claro); display: inline-block;">Seus Dados</h3>
+            <div class="grid-form">
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="text" placeholder="CPF (000.000.000-00)" required>
+                <input type="tel" placeholder="WhatsApp (61) 9XXXX-XXXX" required>
+                <input type="email" placeholder="E-mail" required>
+            </div>
+
+            <h3 style="color:var(--principal); margin-top:20px; margin-bottom:20px; border-bottom: 2px solid var(--fundo-claro); display: inline-block;">Sobre seu Lar</h3>
+            <div class="grid-form">
+                <select required>
+                    <option value="" disabled selected>Onde você mora?</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="chacara">Chácara/Sítio</option>
+                </select>
+                <select required>
+                    <option value="" disabled selected>Possui outros animais?</option>
+                    <option value="sim">Sim, possuo</option>
+                    <option value="nao">Não possuo</option>
+                </select>
+            </div>
+
+            <h3 style="color:var(--principal); margin-top:20px; margin-bottom:20px; border-bottom: 2px solid var(--fundo-claro); display: inline-block;">O escolhido</h3>
+            <select required>
+                <option value="" disabled selected>Selecione o animal que deseja adotar</option>
+                <option>Thor (Macho - 3 anos)</option>
+                <option>Bento (Macho - 5 anos)</option>
+                <option>Mel (Fêmea - 2 anos)</option>
+                <option>Luna (Fêmea - 1 ano)</option>
+                <option>Max (Macho - 4 anos)</option>
+                <option>Pipoca (Fêmea - 1 ano)</option>
+                <option>Rex (Macho - 6 anos)</option>
+                <option>Bob (Macho - 2 anos)</option>
+                <option>Amora (Fêmea - 3 anos)</option>
+                <option>Zeca (Macho - 7 anos)</option>
+            </select>
+
+            <textarea rows="5" placeholder="Conte um pouco sobre sua rotina e por que deseja adotar este pet..." required></textarea>
+
+            <div style="margin-top: 10px; margin-bottom: 30px;">
+                <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: var(--texto); cursor: pointer;">
+                    <input type="checkbox" style="width: auto; margin-bottom: 0;" required>
+                    Estou ciente de que a adoção é um ato de responsabilidade por toda a vida do animal.
+                </label>
+            </div>
+
+            <button type="submit" class="btn" style="width:100%; font-size: 1rem;">Enviar Minha Candidatura</button>
+        </form>
+    </div>
+
+    <footer>&copy; 2026 Lar Amigo - Brasília, DF</footer>
+</body>
+</html>
